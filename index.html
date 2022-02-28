@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- sidebar -->
+      <div class="sidebar">
+        <div class="heading">
+          <span class="material-icons-outlined md-72">dashboard</span>
+          <p>Dashboard</p>
+        </div>
+        <div class="menu">
+          <ul>
+            <li>
+              <span class="material-icons-outlined md-36">home</span>
+              <p>Home</p>
+            </li>
+            <li>
+              <span class="material-icons-outlined md-36">badge</span>
+              <p>Profile</p>
+            </li>
+            <li>
+              <span class="material-icons-outlined md-36">mode_comment</span>
+              <p>Messages</p>
+            </li>
+            <li>
+              <span class="material-icons-outlined md-36">history</span>
+              <p>History</p>
+            </li>
+            <li>
+              <span class="material-icons-outlined md-36">task</span>
+              <p>Tasks</p>
+            </li>
+            <li>
+              <span class="material-icons-outlined md-36">groups</span>
+              <p>Communities</p>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <span class="material-icons-outlined md-36">settings</span>
+              <p>Settings</p>
+            </li>
+            <li>
+              <span class="material-icons-outlined md-36">help_center</span>
+              <p>Support</p>
+            </li>
+            <li>
+              <span class="material-icons-outlined md-36">verified_user</span>
+              <p>Privacy</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- /sidebar -->
+
+      <!-- header -->
+      <div class="header">
+        <!-- search -->
+        <div class="search">
+          <label for="search"
+            ><span class="material-icons-outlined md-48">search</span></label
+          >
+          <input type="text" id="search" />
+        </div>
+        <!-- /search -->
+
+        <!-- profile -->
+        <div class="profile">
+          <span class="material-icons-outlined md-48">
+            notifications_active
+          </span>
+          <img
+            class="profileavatar"
+            src="./images/morganavatar.png"
+            style="width: 6rem"
+          />
+          <h3 class="profilename">Morgan Oakley</h3>
+        </div>
+        <!-- /profile -->
+
+        <!-- greeting -->
+        <div class="greeting">
+          <img
+            src="./images/morganavatar.png"
+            class="greetingavatar"
+            style="width: 8rem"
+          />
+          <p class="greet">Hi there,</p>
+          <p class="greetuser">Morgan Oakley (@morgan)</p>
+        </div>
+        <!-- /greeting -->
+
+        <!-- buttons -->
+        <div class="buttons">
+          <button class="heading button">New</button>
+          <button class="heading button">Upload</button>
+          <button class="heading button">Share</button>
+        </div>
+        <!-- /buttons -->
+      </div>
+      <!-- /header -->
+
+      <!-- main -->
+      <div class="main">
+        <!-- projects -->
+        <div class="projects">
+          <div class="heading">Your Projects</div>
+          <!-- project -->
+          <div class="project">
+            <!-- card -->
+            <div class="card">
+              <div class="heading">Super Cool Project</div>
+              <div class="text">
+                Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin
+                nibh erat, id facilisis felis accumsan nec.
+              </div>
+              <div class="buttons">STAR VIEW SHARE</div>
+            </div>
+            <!-- /card -->
+
+            <!-- card -->
+            <div class="card">
+              <div class="heading">Less Cool Project</div>
+              <div class="text">
+                Nullam condimentum ipsum et lectus vehicula consectetur. Quisque
+                sed dolor toncidunt, consectetur sapien et, facilisis dolor.
+                Duis sem purus, dignissim ut sapien in, varius pellentesque
+                lacus.
+              </div>
+              <div class="buttons">STAR VIEW SHARE</div>
+            </div>
+            <!-- /card -->
+
+            <!-- card -->
+            <div class="card">
+              <div class="heading">Impossible App</div>
+              <div class="text">
+                In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a
+                placerat velit sagittis id.
+              </div>
+              <div class="buttons">STAR VIEW SHARE</div>
+            </div>
+            <!-- /card -->
+
+            <!-- card -->
+            <div class="card">
+              <div class="heading">Easy Peasy App</div>
+              <div class="text">
+                Etium cursus eros ac efficitur fringilla. Vestibulum dignissim
+                urna eget accumsan aliquam. Curabitur dignissim nisi in tortor
+                commodo, ac bibendum magna tincidunt.
+              </div>
+              <div class="buttons">STAR VIEW SHARE</div>
+            </div>
+            <!-- /card -->
+
+            <!-- card -->
+            <div class="card">
+              <div class="heading">Ad Blocker</div>
+              <div class="text">
+                Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus
+                vel, pharetra hendrerit felis. Aliquam sed malesuada eros.
+              </div>
+              <div class="buttons">STAR VIEW SHARE</div>
+            </div>
+            <!-- /card -->
+
+            <!-- card -->
+            <div class="card">
+              <div class="heading">Money Maker</div>
+              <div class="text">
+                Praesent convallis, libero quis congue elementum, nunc ante
+                faucibus sapien, ac scelerisque tortor purus sit amet ex.
+                Pellentesque mollis nec sem vel aliquam.
+              </div>
+              <div class="buttons">STAR VIEW SHARE</div>
+            </div>
+            <!-- /card -->
+          </div>
+          <!-- /project -->
+        </div>
+        <!-- /projects -->
+
+        <!-- announcements -->
+        <div class="announcements">
+          <div class="heading">Announcements</div>
+          <!-- content -->
+          <div class="content">
+            <div class="announcement">
+              <!-- announcement -->
+              <div class="heading">Site Maintenance</div>
+              <div class="text">
+                Vestibulum condimentum tellus lacus, in accumsan elit maximus
+                ac. Donec hendrerit sodales congue...
+              </div>
+              <!-- /announcement -->
+
+              <hr />
+
+              <!-- announcement -->
+              <div class="heading">Community Share Day</div>
+              <div class="text">
+                Nam vel lectus tincidunt, rutrum nulla eu, ornare libero.
+                Aliquam dictum accumsan porttitor...
+              </div>
+              <!-- /announcement -->
+
+              <hr />
+
+              <!-- announcement -->
+              <div class="heading">Updated Privacy Policy</div>
+              <div class="text">
+                Phaseullus efficitur nisi eget elit consectetur, eget
+                condimentum ante auctor. Cras fringilla sagittis sem in
+                mattis...
+              </div>
+              <!-- /announcement -->
+            </div>
+            <!-- /announcement -->
+          </div>
+          <!-- /content-->
+        </div>
+        <!-- announcements -->
+
+        <!-- trending -->
+        <div class="trending">
+          <div class="heading">Trending</div>
+          <!-- content -->
+          <div class="content">
+            <!-- trend -->
+            <div class="trend">
+              <div class="avatar">AVATAR</div>
+              <div class="user">@tegan</div>
+              <div class="name">World Peace Builder</div>
+            </div>
+            <!-- /trend -->
+
+            <!-- trend -->
+            <div class="trend">
+              <div class="avatar">AVATAR</div>
+              <div class="user">@morgan</div>
+              <div class="name">Super Cool Project</div>
+            </div>
+            <!-- /trend -->
+
+            <!-- trend -->
+            <div class="trend">
+              <div class="avatar">AVATAR</div>
+              <div class="user">@kendall</div>
+              <div class="name">Life Changing App</div>
+            </div>
+            <!-- /trend -->
+
+            <!-- trend -->
+            <div class="trend">
+              <div class="avatar">AVATAR</div>
+              <div class="user">@alex</div>
+              <div class="name">No Traffic Maker</div>
+            </div>
+            <!-- /trend -->
+          </div>
+          <!-- /content -->
+        </div>
+        <!-- /trending -->
+      </div>
+      <!-- /main -->
+    </div>
+    <!-- /container -->
+  </body>
+</html>
