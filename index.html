@@ -20,7 +20,7 @@
   <body>
     <div class="container">
       <!-- sidebar -->
-      <div class="sidebar">
+      <div id="sidebar">
         <div class="heading">
           <span class="material-icons-outlined md-72">dashboard</span>
           <p>Dashboard</p>
@@ -71,19 +71,19 @@
       <!-- /sidebar -->
 
       <!-- header -->
-      <div class="header">
+      <div id="header">
         <!-- search -->
         <div class="search">
-          <label for="search"
-            ><span class="material-icons-outlined md-48">search</span></label
+          <label for="search">
+            <span class="material-icons-outlined md-48">search</span></label
           >
-          <input type="text" id="search" />
+          <input type="text" id="search-input" />
         </div>
         <!-- /search -->
 
         <!-- profile -->
         <div class="profile">
-          <span class="material-icons-outlined md-48">
+          <span class="material-icons-outlined md-48 bell">
             notifications_active
           </span>
           <img
@@ -120,7 +120,7 @@
       <!-- main -->
       <div class="main">
         <!-- projects -->
-        <div class="projects">
+        <div id="projects">
           <h3>Your Projects</h3>
           <!-- project -->
           <div class="project">
@@ -223,87 +223,102 @@
         </div>
         <!-- /projects -->
 
-        <!-- announcements -->
-        <div class="announcements">
-          <div class="heading">Announcements</div>
-          <!-- content -->
-          <div class="content">
-            <div class="announcement">
+        <!-- announcements-and-trending -->
+        <div id="announcements-and-trending">
+          <!-- announcements -->
+          <div id="announcements">
+            <h3>Announcements</h3>
+            <!-- content -->
+            <div class="content">
               <!-- announcement -->
-              <div class="heading">Site Maintenance</div>
-              <div class="text">
-                Vestibulum condimentum tellus lacus, in accumsan elit maximus
-                ac. Donec hendrerit sodales congue...
+              <div class="announcement">
+                <h6>Site Maintenance</h6>
+                <p>
+                  Vestibulum condimentum tellus lacus, in accumsan elit maximus
+                  ac. Donec hendrerit sodales congue...
+                </p>
               </div>
               <!-- /announcement -->
 
-              <hr />
+              <div class="announcement-rule"></div>
 
               <!-- announcement -->
-              <div class="heading">Community Share Day</div>
-              <div class="text">
-                Nam vel lectus tincidunt, rutrum nulla eu, ornare libero.
-                Aliquam dictum accumsan porttitor...
+              <div class="announcement">
+                <h6>Community Share Day</h6>
+                <p>
+                  Nam vel lectus tincidunt, rutrum nulla eu, ornare libero.
+                  Aliquam dictum accumsan porttitor...
+                </p>
               </div>
               <!-- /announcement -->
 
-              <hr />
+              <div class="announcement-rule"></div>
 
               <!-- announcement -->
-              <div class="heading">Updated Privacy Policy</div>
-              <div class="text">
-                Phaseullus efficitur nisi eget elit consectetur, eget
-                condimentum ante auctor. Cras fringilla sagittis sem in
-                mattis...
+              <div class="announcement">
+                <h6>Updated Privacy Policy</h6>
+                <p>
+                  Phaseullus efficitur nisi eget elit consectetur, eget
+                  condimentum ante auctor. Cras fringilla sagittis sem in
+                  mattis...
+                </p>
               </div>
               <!-- /announcement -->
             </div>
-            <!-- /announcement -->
+            <!-- /content-->
           </div>
-          <!-- /content-->
-        </div>
-        <!-- announcements -->
+          <!-- /announcements -->
 
-        <!-- trending -->
-        <div class="trending">
-          <div class="heading">Trending</div>
-          <!-- content -->
-          <div class="content">
-            <!-- trend -->
-            <div class="trend">
-              <div class="avatar">AVATAR</div>
-              <div class="user">@tegan</div>
-              <div class="name">World Peace Builder</div>
-            </div>
-            <!-- /trend -->
+          <!-- trending -->
+          <div id="trending">
+            <h3>Trending</h3>
+            <!-- content -->
+            <div class="content">
+              <!-- trend -->
+              <div class="trend">
+                <img class="avatar" src="./images/teganavatar.png" />
+                <p>
+                  <span class="user">@tegan</span><br />
+                  <span class="topic">World Peace Builder</span>
+                </p>
+              </div>
+              <!-- /trend -->
 
-            <!-- trend -->
-            <div class="trend">
-              <div class="avatar">AVATAR</div>
-              <div class="user">@morgan</div>
-              <div class="name">Super Cool Project</div>
-            </div>
-            <!-- /trend -->
+              <!-- trend -->
+              <div class="trend">
+                <img class="avatar" src="./images/morganavatar.png" />
+                <p>
+                  <span class="user">@morgan</span><br />
+                  <span class="topic">Super Cool Project</span>
+                </p>
+              </div>
+              <!-- /trend -->
 
-            <!-- trend -->
-            <div class="trend">
-              <div class="avatar">AVATAR</div>
-              <div class="user">@kendall</div>
-              <div class="name">Life Changing App</div>
-            </div>
-            <!-- /trend -->
+              <!-- trend -->
+              <div class="trend">
+                <img class="avatar" src="./images/kendallavatar.png" />
+                <p>
+                  <span class="user">@kendall</span><br />
+                  <span class="topic">Life Changing App</span>
+                </p>
+              </div>
+              <!-- /trend -->
 
-            <!-- trend -->
-            <div class="trend">
-              <div class="avatar">AVATAR</div>
-              <div class="user">@alex</div>
-              <div class="name">No Traffic Maker</div>
+              <!-- trend -->
+              <div class="trend">
+                <img class="avatar" src="./images/alexavatar.png" />
+                <p>
+                  <span class="user">@alex</span><br />
+                  <span class="topic">No Traffic Maker</span>
+                </p>
+              </div>
+              <!-- /trend -->
             </div>
-            <!-- /trend -->
+            <!-- /content -->
           </div>
-          <!-- /content -->
+          <!-- /trending -->
         </div>
-        <!-- /trending -->
+        <!-- announcements-and-trending -->
       </div>
       <!-- /main -->
     </div>
